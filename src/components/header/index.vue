@@ -6,6 +6,8 @@
 		<el-link type="warning">警告链接</el-link>
 		<el-link type="danger">危险链接</el-link>
 		<el-link type="info">信息链接</el-link>
+
+    
     </el-header>
 </template>
 <script>
