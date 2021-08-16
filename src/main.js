@@ -7,7 +7,6 @@ const  app = createApp(App)
 app.config = {
     "":false
 }
-app.
 app.use(ElementPlus)
 app.use(router)
 app.mount('#app')
