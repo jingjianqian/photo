@@ -1,8 +1,14 @@
 <template>
-    <div>Home Page</div>
+    <div><p>I am Home page</p></div>
+    <Header></Header>
 </template>
 <script>
+
+import Header from '@/components/header/index';
 export default {
-    name:'Home'
+    name:'Home',
+    components:{
+        Header
+    }
 }
 </script>

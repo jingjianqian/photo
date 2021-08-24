@@ -1,8 +1,15 @@
 <template>
-    <div>about page</div>
+    <div><p>I am About page</p></div>
+    <Footer></Footer>
 </template>
 <script>
+
+import Footer from '@/components/footer/index';
 export default {
-    mame: 'About'
+    name:'About',
+    components:{
+        Footer
+    }
 }
 </script>
+

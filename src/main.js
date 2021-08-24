@@ -1,12 +1,19 @@
 import { createApp } from 'vue';
-import ElementPlus from 'element-plus';
 import App from './App.vue';
-import router from './router'
+import router from './router';
+import BootstrapVue from 'bootstrap-vue'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 
 const  app = createApp(App)
 app.config = {
     "":false
 }
-app.use(ElementPlus)
+
+
+app.use(BootstrapVue)
+
+
 app.use(router)
 app.mount('#app')

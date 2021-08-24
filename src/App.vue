@@ -8,27 +8,18 @@
 
     <router-link to="/about">Go to About</router-link>
     
-     <router-link to="/photos">Go to  photos</router-link>
+     <router-link to="/photo">Go to  photos</router-link>
   </p>
     <router-view></router-view>
   </div>
-  <el-container>
-      <Header />
-    <el-footer>
-      <Footer />
-    </el-footer>
-  </el-container>
 </template>
 
 <script>
-import Header from '@/components/header/index'
-import Footer from '@/components/footer/index'
 
 export default {
   name: 'App',
   components: {
-    Header,
-    Footer
+
   }
 }
 </script>
