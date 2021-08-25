@@ -16,6 +16,10 @@ export const constantRoutes = [
     {
         path:'/photo',
         component:()=>import('@/views/photos/index')
+    },
+    {
+        path:'/code',
+        component:()=>import('@/views/code/index')
     }
 ]
 

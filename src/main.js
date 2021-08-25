@@ -1,9 +1,8 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import BootstrapVue from 'bootstrap-vue'
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
 
 const  app = createApp(App)
@@ -11,9 +10,6 @@ app.config = {
     "":false
 }
 
-
-app.use(BootstrapVue)
-
-
+app.use(ElementPlus)
 app.use(router)
 app.mount('#app')

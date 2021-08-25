@@ -1,68 +1,41 @@
 <template>
-  <div id="app">
-    <p>
-    <!--使用 router-link 组件进行导航 -->
-    <!--通过传递 `to` 来指定链接 -->
-    <!--`<router-link>` 将呈现一个带有正确 `href` 属性的 `<a>` 标签-->
-    <router-link to="/">Go to Home</router-link>
-
-    <router-link to="/about">Go to About</router-link>
-    
-     <router-link to="/photo">Go to  photos</router-link>
-  </p>
+    <el-container>
+      <el-header>
+        <el-menu  
+          router 
+          class="el-menu-app"
+          mode="horizontal" 
+          text-color="#000"
+          active-text-color="#ffd04b">
+          <el-menu-item index="github"><a href="https://github.com/jingjianqian" target="_blank">My Github</a></el-menu-item>
+            <el-menu-item index="/about">ABOUT</el-menu-item>
+          <el-menu-item index="/code">CODE</el-menu-item>
+          <el-menu-item index="/photo">PHOTOS</el-menu-item>
+          <el-menu-item index="/">HOME</el-menu-item>
+        </el-menu>
+      </el-header>
+    </el-container>
     <router-view></router-view>
-  </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  components: {
-
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
+html {
+  padding:0;
+  margin: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
-
-
-.el-header, .el-footer {
-  background-color: #B3C0D1;
-  color: #333;
-  text-align: center;
-  line-height: 60px;
+.el-menu-item {
+  float:right !important;
+  font-weight: 700;
 }
-
-.el-aside {
-  background-color: #D3DCE6;
-  color: #333;
-  text-align: center;
-  line-height: 200px;
-}
-
-.el-main {
-  background-color: #E9EEF3;
-  color: #333;
-  text-align: center;
-  line-height: 160px;
-}
-
-body > .el-container {
-  margin-bottom: 40px;
-}
-
-.el-container:nth-child(5) .el-aside,
-.el-container:nth-child(6) .el-aside {
-  line-height: 260px;
-}
-
 </style>

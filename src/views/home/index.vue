@@ -1,14 +1,18 @@
 <template>
     <div><p>I am Home page</p></div>
-    <Header></Header>
+    
+
+    <el-empty description="描述文字"></el-empty>
+    <el-empty description="描述文字"></el-empty>
+    <Footer />
 </template>
 <script>
 
-import Header from '@/components/header/index';
+import Footer from '@/components/footer/index';
 export default {
     name:'Home',
     components:{
-        Header
+        Footer
     }
 }
 </script>
